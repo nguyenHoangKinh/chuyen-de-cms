@@ -23,7 +23,7 @@ do_action( 'job_manager_job_filters_before', $atts );
 <form class="job_filter">
 	<?php do_action( 'job_manager_job_filters_start', $atts ); ?>
 
-	<div class="search_jobs">
+	<div class="search_jobs 1111">
 		<?php do_action( 'job_manager_job_filters_search_jobs_start', $atts ); ?>
 
 		<div class="search_keywords">

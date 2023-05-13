@@ -1,3 +1,4 @@
+
 <?php
 /**
  *
@@ -5,9 +6,10 @@
  * The [jobs] shortcode is will use search_location and search_keywords variables from the query string.
  *
  * @link https://wpjobmanager.com/document/tutorial-creating-custom-job-search-form/
- *
+ * 
  * @package JobScout
  */
+
 $find_a_job_link = get_option( 'job_manager_jobs_page_id', 0 );
 $post_slug       = get_post_field( 'post_name', $find_a_job_link );
 $ed_job_category = get_option( 'job_manager_enable_categories' );  
@@ -18,18 +20,21 @@ if( $post_slug ){
     $action_page =  home_url( '/' );
 }
 ?>
-
+<link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <div class="job_listings">
 
   <form class="jobscout_job_filters" method="GET" action="<?php echo esc_url( $action_page ) ?>">
     <div class="search_jobs">
-
-      <div class="search_keywords">
-        <label for="search_keywords"><?php esc_html_e( 'Keywords', 'jobscout' ); ?></label>
-        <input type="text" id="search_keywords" name="search_keywords" placeholder="<?php esc_attr_e( 'Keywords', 'jobscout' ); ?>">
+      <div class="search_keywords" style="margin-right: 15px;">
+      <label for="search_keywords"><?php esc_html_e( 'Search for jobs, companies, skills', 'jobscout' ); ?></label>
+      <div style="background: white; position: relative; padding-left: 20px; padding-right: 10px;" >
+      <div style="left: 50%; bottom: 35% ; position: absolute;" ><i style="color: orange; font-size: 1em;" class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+        <input type="text" id="search_keywords" name="search_keywords" placeholder="<?php esc_attr_e( 'Search for jobs, companies, skills', 'jobscout' ); ?>">
       </div>
 
-      <div class="search_location">
+      <div class="search_location" style="margin-left: 15px;">
         <label for="search_location"><?php esc_html_e( 'Location', 'jobscout' ); ?></label>
         <input type="text"  id="search_location" name="search_location" placeholder="<?php esc_attr_e( 'Location', 'jobscout' ); ?>">
       </div>
@@ -47,8 +52,9 @@ if( $post_slug ){
       <?php } ?>
       
       <div class="search_submit">
-        <input type="submit" value="<?php esc_attr_e( 'Search', 'jobscout'); ?>" />
+        <input type="submit" value="<?php esc_attr_e( 'SEARCH JOB', 'jobscout'); ?>" />
       </div>
+      
 
     </div>
   </form>
