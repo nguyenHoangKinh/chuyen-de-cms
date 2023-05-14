@@ -20,10 +20,10 @@ wp_enqueue_script( 'wp-job-manager-ajax-filters' );
 do_action( 'job_manager_job_filters_before', $atts );
 ?>
 
-<form class="job_filter">
+<form class="job_filters">
 	<?php do_action( 'job_manager_job_filters_start', $atts ); ?>
 
-	<div class="search_jobs 1111">
+	<div class="search_jobs">
 		<?php do_action( 'job_manager_job_filters_search_jobs_start', $atts ); ?>
 
 		<div class="search_keywords">
