@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled sorted 
+1f7b215786ea23c9893ae17f8f86665d54881f5d refs/remotes/origin/main
+070312bc9f6aea45b2ba54ec3180e2f9190704ba refs/remotes/origin/wordpress-6x/1-core
+3160ad03b38f3f12362cafbbbca97ab6620b3e26 refs/remotes/origin/wordpress-6x/7-job
+b0886d85f0c33913b965fbb17d3e54b14be950f7 refs/remotes/origin/wordpress-6x/kinh-YeuCau4
+dcb2d82b55e056b0a028f51107461f0e8976b482 refs/remotes/origin/wordpress-6x/master

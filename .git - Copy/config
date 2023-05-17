@@ -1,0 +1,19 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/nguyenHoangKinh/chuyen-de-cms.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "wordpress-6x/kinh-YeuCau4"]
+	remote = origin
+	merge = refs/heads/wordpress-6x/kinh-YeuCau4
+[taggrouping]
+	groups = 
+	singles = 
+[branch "wordpress-6x/1-core"]
+	remote = origin
+	merge = refs/heads/wordpress-6x/1-core
