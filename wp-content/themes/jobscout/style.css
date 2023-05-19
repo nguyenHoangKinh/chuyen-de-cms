@@ -663,8 +663,8 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   display: inline-block;
-  background: #2ace5e;
-  border: 1px solid #2ace5e;
+  background: orange;
+  border: 1px solid orange;
   color: #fff;
   font-weight: 700;
 
@@ -682,7 +682,7 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
   background: none;
-  color: #2ace5e;
+  color: orange;
 }
 
 button:focus,
@@ -2307,7 +2307,6 @@ SITE BANNER SECTION
   top: 50%;
   left: 0;
   right: 0;
-  text-align: center;
   z-index: 9;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -2519,6 +2518,7 @@ section.category-section {
 }
 
 section.category-section .container {
+
   display: flex;
   flex: 1;
   flex-flow: row wrap;
@@ -8357,4 +8357,19 @@ div.job_listings .load_more_jobs {
   border-style: groove;
   width: 120px;
   height: 120px;
+}
+/* Modlue 1 */
+.banner-caption .caption-inner
+{
+  text-align: left;
+}
+.bg-black
+{
+background: rgb(0, 0, 0);
+opacity: 0.5;
+padding: 50px 150px;
+}
+.kiet-form
+{
+  opacity: 1;
 }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .bg-black
+        {
+            background: rgba(0, 0, 0, 0.8);
+            opacity: 0.5;
+            padding: 50px 100px;
+        }
+        .kiet-form
+        {
+            opacity: 1;
+        }
+        .input-group-text
+        {
+            background: white;
+            border-radius: 0%;
+        }
+        .btn_kiet
+        {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-black">
+        <div class="kiet-form">
+            <form method="GET">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="search_keywords">
+                            <label for="search_keywords"></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="basic-addon1"><i class="fa-thin fa-magnifying-glass"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Username">
+                              </div>
+                            </div>  
+                    </div>
+                
+                
+                <div class="col-md-4">
+                    <div class="search_location">
+                        <label for="search_location"></label>
+                        <input type="text" class="form-control" placeholder="Username" >
+                    </div>
+                </div>
+                    
+                <div class="col-md-2">
+                    <div class="search_submit">
+                        <label for="submit-btn"></label>
+                        <input type="submit" class="form-control btn_kiet" value="Search job" />
+                      </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
