@@ -54,7 +54,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-:root {
+ :root {
   --primary-color: #2ace5e;
   --primary-color-rgb: 42, 206, 94;
   --primary-color-dark: #36b25ded;
@@ -2558,7 +2558,7 @@ section.top-job-section .section-title {
   margin-right: 2.5%;
   margin-bottom: 3%;
   border-radius: 5px;
-  padding: 30px;
+  padding: 20px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -5558,7 +5558,7 @@ JOB LISTING PAGE
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
   margin-bottom: 25px;
   border-radius: 5px;
-  padding: 30px;
+  padding: 20px;
   position: relative;
   display: flex;
   flex: 1;
@@ -6413,6 +6413,7 @@ RESPONSIVE STYLESHEET
 	TOP JOB SECTION
 	=========================*/
   .top-job-section .row div.job_listings article {
+    padding: 20px;
     flex-direction: column;
   }
 
@@ -8159,6 +8160,54 @@ RESPONSIVE STYLESHEET
 .wp-block-social-links {
   flex-wrap: wrap !important;
 }
+
+/* Start css for module 1 */
+.bg-black { 
+  background: rgba(0, 0, 0, .3);
+}
+.form-control.minh{
+  border-radius: 0;
+  border: none;
+  color: #969fa7;
+}
+.input-group-text.minh{
+  background: #fff;
+  border-radius: 0;
+  border: none;
+}
+.color-ogrange{
+  color: orange;
+}
+.form-select.minh{
+  border-radius: 0;
+  border: none;
+  color: #969fa7;
+}
+.padding{
+  padding: 10px;
+  color: #fff;
+}
+.btn-ogrange.minh{
+  background: orange;
+  height: 100%;
+  color: #fff;
+}
+.btn-ogrange.minh:hover{
+  background: orange;
+  color: #fff;
+}
+.input-group{
+  margin: 0 !important;
+}
+.input-group.mb-3{
+  margin: 0 !important;
+}
+
+.caption-inner{
+  text-align: left !important;
+}
+/* End css for module 1 */
+
 /* Start css yeu cau 2 */
 .company1 li.job-type-company {
   font-size: .8em;
@@ -8169,6 +8218,9 @@ RESPONSIVE STYLESHEET
   cursor: default;
 }
 
+.bg{ 
+  font-size: 1em;
+}
 .bg .company1 {
   float: left;
   position: relative;
@@ -8238,8 +8290,10 @@ RESPONSIVE STYLESHEET
 }
 
 .job-title-wrapper {
+  font-size: 0.9em;
   width: calc(100% - 100px);
   padding-left: 26px;
+  margin-top: 18px;
 }
 
 .job-description-content p {
@@ -8348,4 +8402,9 @@ div.job_listings .load_more_jobs {
 .site-content .container {
   max-width: 80%;
 }
+.job-description-content{ 
+  margin-top: 10px;
+}
+.job-description-content{
+  font-size: 0.7em;
 /* End css  yeu cau 2 */
