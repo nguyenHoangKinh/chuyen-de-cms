@@ -1,3 +1,4 @@
+
 <?php
 
 /**
@@ -61,6 +62,9 @@ $company_name = get_post_meta(get_the_ID(), '_company_name', true);
 			</div>
 		</div>
 
+		<div class="job-description-content">
+			<?php echo wp_trim_words(get_the_content(), 20, ''); ?>
+		</div>
 		<div class="job-description-content">
 			<?php echo wp_trim_words(get_the_content(), 20, ''); ?>
 		</div>
