@@ -54,7 +54,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-:root {
+ :root {
   --primary-color: #2ace5e;
   --primary-color-rgb: 42, 206, 94;
   --primary-color-dark: #36b25ded;
@@ -8159,3 +8159,50 @@ RESPONSIVE STYLESHEET
 .wp-block-social-links {
   flex-wrap: wrap !important;
 }
+
+/* Start css for module 1 */
+.bg-black { 
+  background: rgba(0, 0, 0, .3);
+}
+.form-control.minh{
+  border-radius: 0;
+  border: none;
+  color: #969fa7;
+}
+.input-group-text.minh{
+  background: #fff;
+  border-radius: 0;
+  border: none;
+}
+.color-ogrange{
+  color: orange;
+}
+.form-select.minh{
+  border-radius: 0;
+  border: none;
+  color: #969fa7;
+}
+.padding{
+  padding: 10px;
+  color: #fff;
+}
+.btn-ogrange.minh{
+  background: orange;
+  height: 100%;
+  color: #fff;
+}
+.btn-ogrange.minh:hover{
+  background: orange;
+  color: #fff;
+}
+.input-group{
+  margin: 0 !important;
+}
+.input-group.mb-3{
+  margin: 0 !important;
+}
+
+.caption-inner{
+  text-align: left !important;
+}
+/* End css for module 1 */
