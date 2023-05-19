@@ -22,6 +22,7 @@ $job_featured = get_post_meta( get_the_ID(), '_featured', true );
 $company_name = get_post_meta( get_the_ID(), '_company_name', true );
 
 ?>
+<div class="col-6">
 <article <?php job_listing_class(); ?> data-longitude="<?php echo esc_attr( $post->geolocation_lat ); ?>" data-latitude="<?php echo esc_attr( $post->geolocation_long ); ?>">
 
 	<figure class="company-logo">
@@ -73,3 +74,4 @@ $company_name = get_post_meta( get_the_ID(), '_company_name', true );
 	<?php } ?>
 
 </article>
+</div>
