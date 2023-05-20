@@ -108,7 +108,6 @@ section.bg-st-edit.bao {
 
 /* End Css module 5 */</style>
 <?php
-
 /**
  * The main template file
  *

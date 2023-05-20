@@ -107,7 +107,7 @@ if ($ed_blog && ($blog_heading || $sub_title || $qry->have_posts())) { ?>
                     <?php
                     while ($qry->have_posts()) {
                         $qry->the_post(); ?>
-                        <div class="content_my_box thang" style="width: 575px; height: auto; display: flex; background: #fff;">
+                        <div class="content_my_box thang" style=" width: 575px; height: auto; display: flex; background: #fff;">
                             <div class="content_my_box_left thang">
 
                                 <?php
