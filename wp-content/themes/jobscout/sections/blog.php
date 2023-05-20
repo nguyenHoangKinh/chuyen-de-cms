@@ -1,72 +1,3 @@
-<style>/* Css Cua Phan 3 */
-.content_my_box{
-  width: 575px;
-  height: auto;
-  display: flex;
-  background: #fff;
-}
-.content_my_box_left{
-  float: left;
-  width: 50%;
-  height: 100%;
-  padding: 10px;
-  margin-left: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-    
-  
-}
-.content_my_box_right{
-  float: right;
-  width: 50%;
-  height: 100%;
-  padding: 10px;
-  margin-left: 10px;
-  margin-top: 25px;
-  
-}
-.header_content_box_child{
-  font-size: 1.3em;
-  margin-top: 5px;
-  margin-bottom: 0;
-  
-}
-.header_text_content_box{
-  color: #000;
-}
-.center_content_box{
-  width: 95%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 20px;
-    -webkit-line-clamp: 3;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-}
-.readmore_content_box{
-  margin-top: 15px;
-}
-.readmore_text{
-  font-weight: bold;
-  color: red;
-}
-section.bg-st-edit{
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  
-}
-.article-section .bonus-edit {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
-  text-align: left;
-  margin-top: 50px;
-  margin-bottom: 40px;
-}
-
-/* Het Css cua phan 3 */</style>
 <?php
 
 /**
@@ -93,41 +24,40 @@ $args = array(
 $qry = new WP_Query($args);
 
 if ($ed_blog && ($blog_heading || $sub_title || $qry->have_posts())) { ?>
-    <section id="blog-section" class="article-section bg-st-edit" style="background: #f5f5f7;">
+    <section id="blog-section" class="article-section bg-st-edit_nghiem" style="background: #f5f5f7;">
         <div class="container">
             <?php
             if ($blog_heading) echo '<h2 class="section-title">' . esc_html($blog_heading) . '</h2>';
-            
+
             ?>
 
             <?php if ($qry->have_posts()) { ?>
-                <div class="article-wrap bonus-edit">
+                <div class="article-wrap bonus-edit_nghiem">
                     <?php
                     while ($qry->have_posts()) {
                         $qry->the_post(); ?>
-                        <div class="content_my_box" style="width: 575px; height: auto; display: flex; background: #fff;">
-                            <div class="content_my_box_left">
+                        <div class="content_my_box_nghiem">
+                            <div class="content_my_box_left_nghiem">
 
                                 <?php
                                 if (has_post_thumbnail()) {
-                                    echo get_the_post_thumbnail($post->ID, 'post-thumbnail', "class=img-fluid");
+                                    echo get_the_post_thumbnail($post->ID, 'post-thumbnail', "class=img-fluid edit_anh_nghiem");
                                 } else {
                                     jobscout_fallback_svg_image('jobscout-blog');
                                 }
                                 ?>
                             </div>
-                            <div class="content_my_box_right">
-                                <div class="header_content_box">
-                                    <h4 class="header_content_box_child">
-                                        <a href="<?php the_permalink(); ?>" class="header_text_content_box"><?php the_title(); ?></a>
+                            <div class="content_my_box_right_nghiem">
+                                <div class="header_content_box_nghiem">
+                                    <h4 class="header_content_box_child_nghiem">
+                                        <a href="<?php the_permalink(); ?>" class="header_text_content_box_nghiem"><?php the_title(); ?></a>
                             </h4>
                                 </div>
-                                
-                                <div class="center_content_box">
+                                <div class="center_content_box_nghiem">
                                     <?php the_content()?>
                                 </div>
-                                <div class="readmore_content_box">
-                                <a href="<?php the_permalink(); ?>" class="readmore_text">Read more</a>
+                                <div class="readmore_content_box_nghiem">
+                                <a href="<?php the_permalink(); ?>" class="readmore_text_nghiem">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -136,6 +66,11 @@ if ($ed_blog && ($blog_heading || $sub_title || $qry->have_posts())) { ?>
                     wp_reset_postdata();
                     ?>
                 </div><!-- .article-wrap -->
+                <?php if( $blog && $label ){ ?>
+                <div class="btn-wrap">
+        			<a href="<?php the_permalink( $blog ); ?>" class="btn"><?php echo esc_html( $label ); ?></a>
+        		</div>
+            <?php } ?>
             <?php } ?>
         </div>
     </section>
