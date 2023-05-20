@@ -8165,12 +8165,12 @@ RESPONSIVE STYLESHEET
 .bg-black { 
   background: rgba(0, 0, 0, .3);
 }
-.form-control.minh{
+.form-control.kiet{
   border-radius: 0;
   border: none;
   color: #969fa7;
 }
-.input-group-text.minh{
+.input-group-text.kiet{
   background: #fff;
   border-radius: 0;
   border: none;
@@ -8178,7 +8178,7 @@ RESPONSIVE STYLESHEET
 .color-ogrange{
   color: orange;
 }
-.form-select.minh{
+.form-select.kiet{
   border-radius: 0;
   border: none;
   color: #969fa7;
@@ -8187,12 +8187,12 @@ RESPONSIVE STYLESHEET
   padding: 10px;
   color: #fff;
 }
-.btn-ogrange.minh{
+.btn-ogrange.kiet{
   background: orange;
   height: 100%;
   color: #fff;
 }
-.btn-ogrange.minh:hover{
+.btn-ogrange.kiet:hover{
   background: orange;
   color: #fff;
 }
@@ -8407,4 +8407,5 @@ div.job_listings .load_more_jobs {
 }
 .job-description-content{
   font-size: 0.7em;
+}
 /* End css  yeu cau 2 */

@@ -37,19 +37,19 @@ if ($post_slug) {
     <form action="<?php echo esc_url($action_page) ?>" method="GET" class="padding">
       <div class="row">
         <div class="col-md-6">
-          <div class="input-group mb-3 minh">
-            <span class="input-group-text minh" id="basic-addon1">
+          <div class="input-group mb-3 kiet">
+            <span class="input-group-text kiet" id="basic-addon1">
               <i class="fa fa-search color-ogrange" aria-hidden="true"></i>
             </span>
-            <input type="text" id="search_keywords" name="search_keywords" class="form-control minh" placeholder="Search for jobs, companies, skills" aria-label="Username" aria-describedby="basic-addon1">
+            <input type="text" id="search_keywords" name="search_keywords" class="form-control kiet" placeholder="Search for jobs, companies, skills" aria-label="Username" aria-describedby="basic-addon1">
           </div>
         </div>
         <div class="col-md-3">
-          <div class="input-group mb-3 minh">
-            <label class="input-group-text bg-white minh" for="inputGroupSelect02">
+          <div class="input-group mb-3 kiet">
+            <label class="input-group-text bg-white kiet" for="inputGroupSelect02">
               <i class="fa fa-map-marker color-ogrange" aria-hidden="true"></i>
             </label>
-            <select class="form-select minh" id="inputGroupSelect02" id="search_location" name="search_location">
+            <select class="form-select kiet" id="inputGroupSelect02" id="search_location" name="search_location">
               <option selected></option>
               <?php
               foreach ($data as $item) {
@@ -63,7 +63,7 @@ if ($post_slug) {
           </div>
         </div>
         <div class="col-md-3 padding-none">
-          <input type="submit" value="Search job" class="form-control btn btn-ogrange minh">
+          <input type="submit" value="Search job" class="form-control btn btn-ogrange kiet">
         </div>
       </div>
     </form>

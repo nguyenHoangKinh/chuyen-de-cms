@@ -1,11 +1,11 @@
 <style>/* Css Cua Phan 3 */
-.content_my_box{
+.content_my_box.thang {
   width: 575px;
   height: auto;
   display: flex;
   background: #fff;
 }
-.content_my_box_left{
+.content_my_box_left.thang{
   float: left;
   width: 50%;
   height: 100%;
@@ -16,7 +16,7 @@
     
   
 }
-.content_my_box_right{
+.content_my_box_right.thang{
   float: right;
   width: 50%;
   height: 100%;
@@ -25,16 +25,16 @@
   margin-top: 25px;
   
 }
-.header_content_box_child{
+.header_content_box_child.thang{
   font-size: 1.3em;
   margin-top: 5px;
   margin-bottom: 0;
   
 }
-.header_text_content_box{
+.header_text_content_box.thang{
   color: #000;
 }
-.center_content_box{
+.center_content_box.thang{
   width: 95%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -43,21 +43,21 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
-.readmore_content_box{
+.readmore_content_box.thang{
   margin-top: 15px;
 }
-.readmore_text{
+.readmore_text.thang{
   font-weight: bold;
   color: red;
 }
-section.bg-st-edit{
+section.bg-st-edit.thang{
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 50px;
   padding-bottom: 50px;
   
 }
-.article-section .bonus-edit {
+.article-section .bonus-edit.thang {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
@@ -93,7 +93,7 @@ $args = array(
 $qry = new WP_Query($args);
 
 if ($ed_blog && ($blog_heading || $sub_title || $qry->have_posts())) { ?>
-    <section id="blog-section" class="article-section bg-st-edit" style="background: #f5f5f7;">
+    <section id="blog-section" class="article-section bg-st-edit thang" style="background: #f5f5f7;">
         <div class="container">
             <?php
             if ($blog_heading) echo '<h2 class="section-title">' . esc_html($blog_heading) . '</h2>';
@@ -101,12 +101,12 @@ if ($ed_blog && ($blog_heading || $sub_title || $qry->have_posts())) { ?>
             ?>
 
             <?php if ($qry->have_posts()) { ?>
-                <div class="article-wrap bonus-edit">
+                <div class="article-wrap bonus-edit thang">
                     <?php
                     while ($qry->have_posts()) {
                         $qry->the_post(); ?>
-                        <div class="content_my_box" style="width: 575px; height: auto; display: flex; background: #fff;">
-                            <div class="content_my_box_left">
+                        <div class="content_my_box thang" style="width: 575px; height: auto; display: flex; background: #fff;">
+                            <div class="content_my_box_left thang">
 
                                 <?php
                                 if (has_post_thumbnail()) {
@@ -116,18 +116,18 @@ if ($ed_blog && ($blog_heading || $sub_title || $qry->have_posts())) { ?>
                                 }
                                 ?>
                             </div>
-                            <div class="content_my_box_right">
-                                <div class="header_content_box">
-                                    <h4 class="header_content_box_child">
-                                        <a href="<?php the_permalink(); ?>" class="header_text_content_box"><?php the_title(); ?></a>
+                            <div class="content_my_box_right thang">
+                                <div class="header_content_box thang">
+                                    <h4 class="header_content_box_child thang">
+                                        <a href="<?php the_permalink(); ?>" class="header_text_content_box thang"><?php the_title(); ?></a>
                             </h4>
                                 </div>
                                 
-                                <div class="center_content_box">
+                                <div class="center_content_box thang">
                                     <?php the_content()?>
                                 </div>
-                                <div class="readmore_content_box">
-                                <a href="<?php the_permalink(); ?>" class="readmore_text">Read more</a>
+                                <div class="readmore_content_box thang">
+                                <a href="<?php the_permalink(); ?>" class="readmore_text thang">Read more</a>
                                 </div>
                             </div>
                         </div>
