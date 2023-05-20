@@ -8161,35 +8161,35 @@ RESPONSIVE STYLESHEET
   flex-wrap: wrap !important;
 }
 /* Css Cua Phan 3 */
-.content_my_box_nghiem{
+.content_my_box{
   width: 575px;
   height: auto;
   display: flex;
   background: #fff;
   margin-bottom: 20px;
 }
-.content_my_box_left_nghiem{
+.content_my_box_left{
   float: left;
   width: 45%;
   height: 100%;
   padding: 10px;
 }
-.content_my_box_right_nghiem{
+.content_my_box_right{
   float: right;
   width: 55%;
   height: 100%;
   padding: 10px;
 }
-.header_content_box_child_nghiem{
+.header_content_box_child{
   font-size: 1.3em;
   margin-top: 5px;
   margin-bottom: 0;
   
 }
-.header_text_content_box_nghiem{
+.header_text_content_box{
   color: #000;
 }
-.center_content_box_nghiem{
+.center_content_box{
   width: 95%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -8198,21 +8198,21 @@ RESPONSIVE STYLESHEET
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
-.readmore_content_box_nghiem{
+.readmore_content_box{
   margin-top: 15px;
 }
 .readmore_text_nghiem{
   font-weight: bold;
   color: orange;
 }
-section.bg-st-edit_nghiem{
+section.bg-st-edit{
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 30px;
   padding-bottom: 20px;
   
 }
-.article-section .bonus-edit_nghiem {
+.article-section .bonus-edit {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
@@ -8220,7 +8220,7 @@ section.bg-st-edit_nghiem{
   margin-top: 25px;
   margin-bottom: 20px;
 }
-.edit_anh_nghiem{
+.edit_anh{
   
 
   height: auto;
