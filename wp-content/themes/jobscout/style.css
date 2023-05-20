@@ -54,7 +54,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-:root {
+ :root {
   --primary-color: #2ace5e;
   --primary-color-rgb: 42, 206, 94;
   --primary-color-dark: #36b25ded;
@@ -2907,6 +2907,7 @@ section.article-section {
   margin-top: 50px;
   margin-bottom: 40px;
 }
+
 
 .article-section .article-wrap article {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16);
@@ -8159,3 +8160,74 @@ RESPONSIVE STYLESHEET
 .wp-block-social-links {
   flex-wrap: wrap !important;
 }
+/* Css Cua Phan 3 */
+.content_my_box{
+  width: 575px;
+  height: auto;
+  display: flex;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.content_my_box_left{
+  float: left;
+  width: 45%;
+  height: 100%;
+  padding: 10px;
+}
+.content_my_box_right{
+  float: right;
+  width: 55%;
+  height: 100%;
+  padding: 10px;
+}
+.header_content_box_child{
+  font-size: 1.3em;
+  margin-top: 5px;
+  margin-bottom: 0;
+  
+}
+.header_text_content_box{
+  color: #000;
+}
+.center_content_box{
+  width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 20px;
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+.readmore_content_box{
+  margin-top: 15px;
+}
+.readmore_text_nghiem{
+  font-weight: bold;
+  color: orange;
+}
+section.bg-st-edit{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  
+}
+.article-section .bonus-edit {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.edit_anh{
+  
+
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  width: 100%;
+  /* Adhere to container width. */
+  vertical-align: top;
+
+}
+/* Het Css cua phan 3 */
