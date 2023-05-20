@@ -32,6 +32,7 @@
   
 }
 .header_text_content_box.thang{
+  text-decoration: none;
   color: #000;
 }
 .center_content_box.thang{
@@ -47,6 +48,7 @@
   margin-top: 15px;
 }
 .readmore_text.thang{
+  text-decoration: none;
   font-weight: bold;
   color: red;
 }
