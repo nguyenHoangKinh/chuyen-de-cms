@@ -13,7 +13,7 @@
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
-
+    
   
 }
 .content_my_box_right{
@@ -97,7 +97,7 @@ if ($ed_blog && ($blog_heading || $sub_title || $qry->have_posts())) { ?>
         <div class="container">
             <?php
             if ($blog_heading) echo '<h2 class="section-title">' . esc_html($blog_heading) . '</h2>';
-
+            
             ?>
 
             <?php if ($qry->have_posts()) { ?>
